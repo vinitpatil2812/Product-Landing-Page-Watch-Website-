@@ -2,10 +2,14 @@
 
 const scrollHeader = () => {
     const header = document.getElementById('header');
-    this.screenY >= 50 ? header.classList.add('scroll-header') : header.classList.remove('scroll-header');
-}
+    window.scrollY >= 50 ? header.classList.add('scroll-header') : header.classList.remove('scroll-header');
+};
+
+// Call the function to set the initial state
+scrollHeader();
 
 window.addEventListener('scroll', scrollHeader);
+
 
 /*=============== SWIPER PRODUCTS ===============*/
 
@@ -33,7 +37,7 @@ let swiperProducts = new Swiper(".products__container", {
 const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () => {
-    const scrollY = window.pageYOffset
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
@@ -89,14 +93,18 @@ const sr = ScrollReveal({
     delay: 400
 })
 
-sr.reveal('.home__data', '.products__container');
+sr.reveal('.home__data');
+sr.reveal('.home__data');
 
 sr.reveal('.home__images', {
-    delay: 600,
+    delay: 400,
     origin: 'bottom'
 });
 
-sr.reveal('.new__card', '.brand__img', {
+sr.reveal('.new__card', {
+    interval: 100
+});
+sr.reveal('.new__card', {
     interval: 100
 });
 
