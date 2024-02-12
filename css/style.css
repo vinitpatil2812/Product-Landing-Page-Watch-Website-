@@ -1,11 +1,11 @@
-/*=============== GOOGLE FONTS ===============*/
+/*GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
+  /* Colors */
   /*Color mode HSL(hue, saturation, lightness)*/
   --bg-color: hsl(220, 18%, 78%);
   --bg-color-light: hsl(220, 18%, 86%);
@@ -15,7 +15,7 @@
   --body-color: hsl(220, 18%, 99%);
   --container-color: hsl(220, 18%, 97%);
 
-  /*========== Font and typography ==========*/
+  /* Font and typography*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Lora', serif;
 
@@ -27,12 +27,12 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /*Font weight */
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
+  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -49,7 +49,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+/* BASE */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -86,8 +86,8 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
+/* THEME */
+/*Variables Dark theme*/
 
 body.dark-theme {
   --bg-color: hsl(220, 18%, 13%);
@@ -98,7 +98,7 @@ body.dark-theme {
   --container-color: hsl(220, 18%, 21%);
 }
 
-/*========== Button Dark/Light ==========*/
+/*Button Dark/Light*/
 
 .change-theme {
   color: var(--title-color);
@@ -106,10 +106,10 @@ body.dark-theme {
   cursor: pointer;
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
+/* 
+  Color changes in some parts of 
+  the website, in dark theme 
+*/
 
 .dark-theme .scroll-header {
   box-shadow: 0 2px 8px hsla(220, 18%, 8%, .3);
@@ -138,7 +138,7 @@ body.dark-theme {
 
 
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*REUSABLE CSS CLASSES */
 .container {
   max-width: 1024px;
   margin-right: 1.5rem;
@@ -164,7 +164,7 @@ body.dark-theme {
   overflow: hidden; /* For animation ScrollReveal */
 }
 
-/*=============== HEADER & NAV ===============*/
+/* HEADER & NAV */
 
 .header {
   position: fixed;
@@ -238,7 +238,7 @@ body.dark-theme {
   color: var(--title-color);
 }
 
-/*=============== HOME ===============*/
+/* HOME */
 
 .home {
   background-color: var(--bg-color);
@@ -285,7 +285,7 @@ body.dark-theme {
   position: relative;
 }
 
-/*=============== BUTTON ===============*/
+/* BUTTON */
 
 .button__link {
   color: var(--title-color);
@@ -304,7 +304,7 @@ body.dark-theme {
   transform: translate(.25rem);
 }
 
-/*=============== NEW ===============*/
+/*NEW */
 
 .new__container {
  row-gap: 2.5rem;
@@ -348,7 +348,7 @@ body.dark-theme {
 }
  
 
-/*=============== COLLECTION ===============*/
+/* COLLECTION*/
 
 .collection {
   background-color: var(--bg-color-light);
@@ -395,7 +395,7 @@ body.dark-theme {
   margin-bottom: 2.5rem;
 }
 
-/*=============== PRODUCTS ===============*/
+/* PRODUCTS */
 
 .products__container {
   padding-bottom: 5rem;
@@ -444,7 +444,7 @@ body.dark-theme {
   right: calc(50% - 2rem);
 }
 
-/*=============== BRANDS ===============*/
+/* BRANDS */
 
 .brand__container {
   grid-template-columns: repeat(2, max-content);
@@ -460,7 +460,7 @@ body.dark-theme {
   margin-top: 2rem;
 }
 
-/*=============== FOOTER ===============*/
+/* FOOTER */
 
 .footer__container {
   row-gap: 3rem;
@@ -547,7 +547,7 @@ body.dark-theme {
 
 
 
-/*=============== SCROLL BAR ===============*/
+/* SCROLL BAR */
 
 ::-webkit-scrollbar {
   width: .6rem;
@@ -563,12 +563,11 @@ body.dark-theme {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(220, 8%, 54%);
 }
-/*=============== SCROLL UP ===============*/
+/* SCROLL UP */
 
 
 /* Show Scroll Up*/
 
-/*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
 @media screen and (max-width: 340px) {
@@ -828,7 +827,7 @@ body.dark-theme {
 
 }
 
-/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+/* For 2K resolutions  */
 
 @media screen and (min-width: 2048px) {
   body {
@@ -836,7 +835,7 @@ body.dark-theme {
   }
 }
 
-/* For 4K resolutions (3840 x 2160, 4096 x 2160) */
+/* For 4K resolutions */
 
 @media screen and (min-width: 3840px) {
   body {

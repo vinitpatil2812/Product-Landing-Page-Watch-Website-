@@ -1,4 +1,4 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+/* CHANGE BACKGROUND HEADER */
 
 const scrollHeader = () => {
     const header = document.getElementById('header');
@@ -11,7 +11,7 @@ scrollHeader();
 window.addEventListener('scroll', scrollHeader);
 
 
-/*=============== SWIPER PRODUCTS ===============*/
+/* SWIPER PRODUCTS */
 
 let swiperProducts = new Swiper(".products__container", {
     spaceBetween: 32,
@@ -32,7 +32,7 @@ let swiperProducts = new Swiper(".products__container", {
     },
 });
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*SCROLL SECTIONS ACTIVE LINK*/
 
 const sections = document.querySelectorAll('section[id]')
 
@@ -56,9 +56,9 @@ const scrollActive = () => {
 
 window.addEventListener('scroll', scrollActive);
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*SHOW SCROLL UP */ 
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*DARK LIGHT THEME */ 
 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -84,7 +84,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/* SCROLL REVEAL ANIMATION */
 
 const sr = ScrollReveal({
     origin: 'top',
