@@ -1,7 +1,7 @@
 # VoltAura Watch Selling Website
 
-Browse the VoltAura website to explore our collection of premium watches. Toggle the dark mode for a personalized viewing experience.
-
+Browse the VoltAura website to explore collections of premium watches. Toggle the dark mode for a personalized viewing experience.
+Visit the website here: [VoltAura Watch Selling Website](https://vinitpatil2812.github.io/Product-Landing-Page-Watch-Website-/)
 ## Features
 
 - **Responsive Design:** VoltAura is optimized for various screen sizes, providing a consistent and user-friendly experience on desktops, tablets, and smartphones.
